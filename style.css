@@ -1,0 +1,138 @@
+body{
+    border: 1px solid blue;
+    display: flex;
+
+    min-height: 100vh; /* 100% of the viewport height */
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+div{
+    
+}
+p{
+    margin: 0px;
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+.left-banner {
+    flex: 0 0 30%; /* Do not grow, do not shrink, start at 40% of the container's width */
+    
+    max-width: 500px; /* But don't go over 400px */
+    background-color: lightblue; /* Just for visibility */
+    padding-top: 200px;
+    background-image: url('photo-1585202900225-6d3ac20a6962.avif');
+    background-size: cover;
+    background-position: center; /* Align the image nicely in the center */
+    position: relative; /* Allows for positioning of inner elements */
+    z-index: 1;
+}
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 70px; /* Adjust the size as needed */
+    color: white; /* This is a guess based on the image */
+    text-transform: uppercase;
+    position: relative; /* Ensures that the text appears above the background image */
+    z-index: 2; /* Higher z-index value means it will be stacked above the background image */
+    padding: 20px; /* Optional: for some spacing around the text */
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.helmet-image {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 0; /* Adjust as needed to position correctly with the text */
+}
+
+
+.welcome-text{
+    padding-left: 20px;
+    padding-right: 150px;
+}  
+.right-content {
+    flex-grow: 1; /* Take up the remaining space */
+    
+    padding-top: 100px;
+}
+
+.input_block{
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-form{
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.form-input{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    gap: 20px;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+    
+}
+
+.input_block{
+    margin-right: 20px;
+}
+input:valid{
+    border: 2px solid green;
+}
+input:invalid{
+    border: 2px solid red;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Makes input take the full width of the form-group */
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="tel"]:focus {
+  border-color: #4faeff; /* Highlight color when focused */
+  outline: none;
+}
+
+/* Style for error message */
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    
+}
+.submit-btn:hover {
+    background-color: #218838;
+}

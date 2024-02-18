@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My spending record</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class = "left-banner">
+        <div class = "banner">
+            <img src="odin-lined.png" alt="Odin Helmet" class="helmet-image">
+            <span>ODIN</span>
+        </div>
+    </div>
+    <div class = "right-content">
+        <div class = 'welcome-text'>
+            <p>This is not a real service! You know you need
+                something like this in your life to help you realize 
+                your deepest dreams.
+            </p> 
+            <p>Sign up <em>now</em> to get start.</p>
+            <br>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class = 'main-form'>
+            <form action="https://httpbin.org/post" method="post">
+                <h2>Let do this!</h2>
+                <section class ='form-input'>
+                    <div class="input_block">
+                        <label for="first_name">FIRST Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="input_block">
+                        <label for="last_name">LAST Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div class="input_block">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                    </div>
+                    <div class="input_block">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>
+                    <div class="input_block">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                        <div class="error-message">*Passwords do not match</div>
+                    </div>
+                    <div class="input_block">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
+                </section>
+                <section >
+                    <button type="submit" class="submit-btn">Create Account</button>
+                    <p>Already have and account? Log in</p>
+                </section>
+            </form>
+        </div>
+        
+    </div>
+  </body>
+</html>
